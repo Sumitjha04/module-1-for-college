@@ -1,0 +1,233 @@
+# Week 1 Module – Programming Practice (Java)
+
+## 1. Square Pattern
+
+```java
+public class SquarePattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 2. Hollow Square Pattern
+
+```java
+public class HollowSquarePattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 3. Triangle Pattern
+
+```java
+public class TrianglePattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 4. Inverted Triangle Pattern
+
+```java
+public class InvertedTrianglePattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 5. Pyramid Pattern
+
+```java
+public class PyramidPattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 6. Diamond Pattern
+
+```java
+public class DiamondPattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        // Upper Half
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        // Lower Half
+        for (int i = n - 1; i >= 1; i--) {
+
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 7. Number Square Pattern
+
+```java
+public class NumberSquarePattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n; j++) {
+                System.out.print("1 ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 8. Incrementing Number Pattern
+
+```java
+public class IncrementingNumberPattern {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= n; j++) {
+                System.out.print(j + " ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 9. Number Right Triangle
+
+```java
+public class NumberRightTriangle {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+
+## 10. Sandwich Pattern
+
+```java
+public class SandwichPattern {
+    public static void main(String[] args) {
+
+        for (int i = 3; i <= 5; i++) {
+            for (int j = 1; j <= (6 - i); j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+
+        for (int i = 4; i >= 3; i--) {
+            for (int j = 1; j <= (6 - i); j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
